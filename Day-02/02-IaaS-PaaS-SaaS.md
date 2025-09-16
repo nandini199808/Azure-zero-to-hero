@@ -33,6 +33,6 @@ No setup, no servers, no coding.
 🧠 One Line Summary:
 ----------------------------------------
 Model	What You Do	Real-Life Example
-**IaaS**	You do most of the work	Cook pizza at home
-**PaaS**	You focus on the app only	Use pizza base and bake
-**SaaS**	Everything is ready	Order and eat pizza
+- **IaaS**	You do most of the work	Cook pizza at home
+- **PaaS**	You focus on the app only	Use pizza base and bake
+- **SaaS**	Everything is ready	Order and eat pizza
