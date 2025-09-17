@@ -1,59 +1,74 @@
-# Types of Virtual Machines on Azure
+### 💻 **Understanding Azure Virtual Machines – The Simple Way**
 
-Azure provides a variety of virtual machine (VM) offerings to cater to different workload requirements. Each VM type is designed with specific hardware configurations to meet diverse performance and scalability needs.
+Think of an Azure **Virtual Machine (VM)** like a computer that lives in the **cloud** — not on your desk.
 
-## General Purpose VMs
+Azure gives you **different types of VMs** depending on what kind of job you want that "cloud computer" to do.
 
-**Example: Standard_D2s_v3**
+### 🔹 1. **General Purpose VMs**
 
-- **Description:** General-purpose VMs are well-balanced machines suitable for a variety of workloads. They offer a good balance of CPU-to-memory ratio and are suitable for development, testing, and small to medium-sized databases.
+🧠 Balanced CPU + memory
+✅ Use for: Websites, apps, small databases
+📌 Example: Like a regular laptop – does everything okay
 
-- **Use Case:** Hosting websites, lightweight applications, or development and testing environments.
+---
 
-## Compute Optimized VMs
+### 🔸 2. **Compute Optimized VMs**
 
-**Example: Standard_F2s_v2**
+⚡ High CPU power
+✅ Use for: Heavy processing, data tasks, analytics
+📌 Example: Like a gaming PC – fast brain, quick thinking
 
-- **Description:** Compute optimized VMs are designed for compute-intensive workloads that require high CPU power. They provide a high CPU-to-memory ratio, making them suitable for data analytics and computational tasks.
+---
 
-- **Use Case:** Batch processing, gaming applications, and other CPU-intensive workloads.
+### 🟩 3. **Memory Optimized VMs**
 
-## Memory Optimized VMs
+🧠 More RAM (memory)
+✅ Use for: Big databases, in-memory apps
+📌 Example: Like a computer that can remember LOTS of stuff
 
-**Example: Standard_E16s_v3**
+---
 
-- **Description:** Memory optimized VMs are tailored for memory-intensive applications. They provide a high memory-to-CPU ratio, making them suitable for databases, in-memory caching, and analytics.
+### 📀 4. **Storage Optimized VMs**
 
-- **Use Case:** Running large databases, in-memory caching, and analytics applications.
+📦 High disk speed & storage
+✅ Use for: Big data apps, fast file reading/writing
+📌 Example: Like a PC with a super-fast hard drive
 
-## Storage Optimized VMs
+---
 
-**Example: Standard_L8s_v2**
+### 🎮 5. **GPU VMs**
 
-- **Description:** Storage optimized VMs are designed for workloads that require high storage throughput and I/O performance. They provide high local disk throughput, making them suitable for big data and large databases.
+🎨 Graphics + Parallel Computing
+✅ Use for: Machine Learning, AI, video editing
+📌 Example: Like a high-end graphics computer
 
-- **Use Case:** Big data applications, data warehousing, and large-scale databases.
+---
 
-## GPU VMs
+### 🚀 6. **High-Performance VMs**
 
-**Example: Standard_NC6s_v3**
+🔬 Massive computing power
+✅ Use for: Simulations, research, 3D modeling
+📌 Example: Like a supercomputer for science/math
 
-- **Description:** GPU (Graphics Processing Unit) VMs are equipped with powerful graphics processors, suitable for graphics-intensive applications and parallel processing tasks.
+---
 
-- **Use Case:** Machine learning, graphics rendering, and simulations that require GPU acceleration.
+### 💸 7. **Burstable VMs**
 
-## High-Performance Compute VMs
+🕒 Normal speed most of the time, fast when needed
+✅ Use for: Small apps, testing, learning
+📌 Example: Like a small car that can go fast temporarily
 
-**Example: Standard_H16r**
+---
 
-- **Description:** High-Performance Compute VMs are designed for demanding, parallel processing and high-performance computing (HPC) applications.
+| Your Need                       | VM Type              |
+| ------------------------------- | -------------------- |
+| Basic apps/dev work             | General / Burstable  |
+| CPU-heavy work                  | Compute Optimized    |
+| Large memory (RAM) needed       | Memory Optimized     |
+| File-heavy, storage performance | Storage Optimized    |
+| AI, video, graphics tasks       | GPU VMs              |
+| Research, modeling, simulations | High-Performance VMs |
 
-- **Use Case:** Simulations, modeling, and scenarios that require massive parallel processing.
 
-## Burstable VMs
-
-**Example: B1s**
-
-- **Description:** Burstable VMs provide a baseline level of CPU performance with the ability to burst above the baseline for a certain period. They are cost-effective for workloads with varying CPU usage.
-
-- **Use Case:** Development and testing environments, small websites, and applications with variable workloads.
+**Inbound port rule** Traffic that is coming to our application.
+**outbound port rule** Traffic that is out of our application or VM.
