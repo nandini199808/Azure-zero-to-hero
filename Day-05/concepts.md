@@ -1,4 +1,4 @@
-**🌐 Virtual Network (VNet)**
+### 🌐 Virtual Network (VNet)
 
 A **Virtual Network** is like your own private network in the cloud. It lets your Azure resources (like VMs, databases, etc.) talk to each other securely.
 
@@ -22,7 +22,7 @@ Inside that neighborhood (VNet), you can divide it into **smaller blocks** or st
 **Example**: 10.0.0.0/24 is like saying "this is my whole street of 256 houses (IP addresses)."
 
 
-**🛣️ Routes & Route Tables**
+### 🛣️ Routes & Route Tables
 
 These are like Google Maps for your network.
 
@@ -33,7 +33,7 @@ These are like Google Maps for your network.
 **Example**: “If someone from Subnet A wants to talk to Subnet B, send them this way.”
 
 
-**🚦 Network Security Groups (NSGs)**
+### 🚦 Network Security Groups (NSGs)
 
 These are like security guards at the gate.
 
@@ -41,7 +41,7 @@ These are like security guards at the gate.
 
 You can control traffic coming in and going out.
 
-**🛡️ Application Security Groups (ASGs)**
+### 🛡️ Application Security Groups (ASGs)
 
 - These are like name tags for your servers.
 
